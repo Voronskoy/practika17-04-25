@@ -18,6 +18,14 @@ a{
 img{
     width: 100%;
 }
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex-grow: 1;
+}
 .menu{
     background-color:rgb(74, 74, 74);
     color:white;
@@ -59,4 +67,32 @@ footer{
 }
 footer>*{
     display: inline-block;
+}
+@media screen and (min-width: 768px){
+    .menu li{
+        display: inline-block;  
+    }
+    .menu a{
+        border-bottom: none;
+    }
+    .ad{
+        display: block;
+    }
+    .product{
+        display:flex;
+        align-items: center;
+        width: 45%;
+    }
+    .product>div{
+        text-align: left;
+    }
+    .product>img{
+        width: 40%;
+    }
+
+}
+@media screen and (min-width: 1200px){
+    .product{
+        width: 30%;
+    }
 }
